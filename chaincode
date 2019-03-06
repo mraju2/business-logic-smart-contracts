@@ -1,0 +1,4 @@
+peer chaincode invoke -C stanfinandcredth -n sc -c '{"function":"initBank","Args":["STANFIN","Bank","STANFIN","10000000","STANFIN"]}' -o orderer1-credth.io:7050 --tls --cafile $home/data/credth.io-ca-imt.pem --clientauth --keyfile $home/data/tls/peer2-credthpeer.io-cli-client.key --certfile $home/data/tls/peer2-credthpeer.io-cli-client.crt
+
+
+peer chaincode invoke -C stanfinandcredth -n sc -c  '{"function":"newLoan","Args":["Loan1","STANFIN","SME1","Raju","100000","14.5","12","1000","900000","99000","Rumi","Raja","C","","","1547028610","900000"]}' -o orderer1-credth.io:7050 --tls --cafile $home/data/credth.io-ca-imt.pem --clientauth --keyfile $home/data/tls/peer2-credthpeer.io-cli-client.key --certfile $home/data/tls/peer2-credthpeer.io-cli-client.crt
